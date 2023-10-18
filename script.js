@@ -22,7 +22,7 @@ async function loadFile(fileName) {
 
 async function start(e) {
   let index = 1;
-  (await loadFile('lyrics/raining&manila.lrc')).forEach(line => {
+  (await loadFile('raining&manila.lrc')).forEach(line => {
     line = line.trim();
     let minute = parseInt(line.substr(1, 2));
     let second = parseInt(line.substr(4, 5));
